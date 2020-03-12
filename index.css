@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+/* fonts  */
+
+@font-face {
+  font-family: Riffle;
+  src: url(fonts/riffleregular.ttf);
+}
+
+@font-face {
+  font-family: Brisely;
+  src: url(fonts/brisely.ttf);
+}
+
+@font-face {
+  font-family: Geo Sans;
+  src: url(fonts/geosanslight.ttf);
+}
+
+.heading {
+content-align: center;
+}
+
+h1 {
+text-align: center;
+font-family: 'Riffle', serif;
+font-size: 60px;
+outline: 2px solid black;
+margin: 20px auto;
+width: 500px;
+}
+
+h2 {
+font-family: 'Brisely', sans;
+text-align: center;
+font-size: 40px;
+}
+
+ul{
+text-align: center;
+}
+
+li {
+list-style: none inside;
+text-transform: uppercase;
+}
+
+a:link, a:visited {
+color: rgb(77, 219, 255);
+}
+
+nav a:link, nav a:visited {
+color: gray;
+text-decoration: none;	
+font-family: 'M PLUS Rounded 1c', sans serif;
+font-size: 15px;
+}
+
+nav a:hover, nav a:active {
+color: rgb(77, 219, 255);	
+}
+
+.current a:visited, .current a:link {
+color: rgb(77, 219, 255);
+}
+
+.slideshow {
+width: 90%;	
+margin: auto;
+margin-bottom: 40px;
+}
+
+h3 {
+font-family: 'Brisely';
+font-size: 50px;
+margin-top: 30px;
+text-align: center;
+}
+
+p {
+font-family: Geo Sans;
+font-size: 20px;
+}
+
+.about-txt {
+max-width: 600px;
+margin: auto;
+margin-top: 20px;	
+}
+
+.portrait {
+border-radius: 100%;
+max-width: 400px;
+}
+
+.about {
+padding: 0 50px;
+}
+
+.intro img {
+margin: auto;
+}
+
+footer 
+{
+text-align: center;
+margin-top: 20px;
+}
+
+/* Desktop View Only */
+
+@media only screen and (min-width: 800px)
+{
+
+li {
+display: inline-block;
+width: 10%;
+padding: 15px;
+}
+
+.current a {
+border-bottom: 3px solid rgb(77, 219, 255);
+}
+
+.current a:link, .current a:visited {
+color: gray;
+}
+
+.about {
+padding: 0 100px;
+}
+
+}
